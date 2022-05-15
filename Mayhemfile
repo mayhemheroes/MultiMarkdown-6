@@ -1,0 +1,6 @@
+project: rnshah9/mayhem-multimarkdown-6
+target: multimarkdown
+tests: null
+
+cmds:
+  - cmd: /repo/build/multimarkdown @@
