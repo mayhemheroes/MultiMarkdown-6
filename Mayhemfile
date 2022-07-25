@@ -2,4 +2,4 @@ project: multimarkdown-6
 target: multimarkdown
 
 cmds:
-  - cmd: /repo/build/multimarkdown @@
+  - cmd: /multimarkdown @@
