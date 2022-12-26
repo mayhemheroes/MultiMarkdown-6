@@ -9,8 +9,8 @@ WORKDIR /repo
 RUN make release
 WORKDIR /repo/build
 RUN make -j8
-RUN clang++ /repo/mayhem/fuzz.cpp /repo/build/libMultiMarkdown.a -fsanitize=fuzzer,address -o /fuzz
+RUN clang++ /repo/mayhem/fuzz_clean_string.cpp /repo/build/libMultiMarkdown.a -fsanitize=fuzzer,address -o /fuzz
 
 FROM ubuntu:20.04 as package
 COPY --from=builder /repo/build/multimarkdown /
-COPY --from=builder /fuzz /fuzz
+COPY --from=builder /fuzz /fuzz_clean_string
