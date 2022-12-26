@@ -1,0 +1,6 @@
+project: multimarkdown-6
+target: clean-string
+
+cmds:
+  - cmd: /fuzz_clean_string
+    libfuzzer: true
