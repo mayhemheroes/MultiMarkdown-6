@@ -1,0 +1,5 @@
+project: multimarkdown-6
+target: multimarkdown
+
+cmds:
+  - cmd: /multimarkdown @@
